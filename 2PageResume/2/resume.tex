@@ -1,0 +1,120 @@
+
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     3rd party packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Needed to divide into several files
+\usepackage{import}
+\usepackage{tabto}
+\usepackage{verbatimbox}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+
+
+\name{}{}
+\address{}
+\mobile{} 
+%%% Social
+\email{}
+\homepage{}
+\github{}
+\linkedin{}
+%%% Optionals
+%\position{}
+%\quote{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+% \makecvfooter
+%   {\today}
+%   {Suman Swaroop~~~·~~~Résumé}
+%   {\thepage}
+
+\begin{document}
+%%% Make a header for CV with personal data
+%%%4.67
+% \includegraphics[scale=0.46]{topresumee}
+
+\vspace*{42mm}
+
+%%% Import contents
+\vspace*{-0.4cm}
+\import{\sectiondir}{academics.tex}
+
+\vspace*{-0.56cm}
+\import{\sectiondir}{Internships.tex}
+
+\vspace*{-0.56cm}
+\import{\sectiondir}{CourseProjects.tex}
+
+\vspace*{-0.56cm}
+\import{\sectiondir}{OtherProjects.tex}
+
+% \vspace*{-0.54cm}
+% \import{\sectiondir}{interests.tex}
+
+\vspace*{-0.56cm}
+\import{\sectiondir}{courses.tex}
+
+\vspace*{-0.56cm}
+\import{\sectiondir}{skills.tex}
+
+\vspace*{-0.56cm}
+\import{\sectiondir}{pors.tex}
+
+\vspace*{-0.56cm}
+\import{\sectiondir}{extraactivities.tex}
+
+%% Uncomment this for interests and comment the feeder project
+
+% \vspace*{-0.52cm}
+% \import{\sectiondir}{OtherProjects.tex}
+
+% \vspace*{-0.52cm}
+% \import{\sectiondir}{interests.tex}
+
+% \vspace*{-0.52cm}
+% \import{\sectiondir}{courses.tex}
+
+% \vspace*{-0.52cm}
+% \import{\sectiondir}{skills.tex}
+
+% \vspace*{-0.52cm}
+% \import{\sectiondir}{pors.tex}
+
+% \vspace*{-0.52cm}
+% \import{\sectiondir}{extraactivities.tex}
+
+\end{document}
